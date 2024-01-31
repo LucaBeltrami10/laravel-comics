@@ -13,7 +13,11 @@
 
     @include('partials.header')
 
-    <h1>app</h1>
+    <main>
+        @yield('main-content')
+    </main>
+
+    @include('partials.footer')
 
 </body>
 

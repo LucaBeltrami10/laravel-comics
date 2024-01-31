@@ -1,0 +1,72 @@
+@import "./mixins";
+@import "./variables";
+
+footer {
+    div.upper-footer {
+        background-image: url('../../img/footer-bg.jpg');
+
+        div.container.top {
+            @include flex(row, start, start);
+            background-image: url('../../img/dc-logo-bg.png');
+            background-size: 22rem;
+            background-position: right;
+            background-repeat: no-repeat;
+
+            .column {
+                padding: 1.5rem 0 1.5rem 0;
+            }
+
+            h1 {
+                text-transform: uppercase;
+                font-size: 1rem;
+                color: $color-footer-title-list;
+                margin: 0.5rem 0 0.5rem 0;
+            }
+
+            ul {
+                margin: 0 1rem 0 0;
+
+                li {
+                    font-size: 0.7rem;
+                    margin: 0 0 0.2rem 0;
+                    color: $color-footer-list-item;
+                }
+            }
+        }
+    }
+
+    div.bottom-footer {
+        background-color: $bottom-footer-background;
+        padding: 1rem 0 1rem 0;
+
+        div.container.bottom {
+            @include flex(row, space-between, center);
+
+            button {
+                border: 2px solid $color-border-button;
+                padding: 0.7rem;
+                text-transform: uppercase;
+                font-size: 0.7rem;
+                color: white;
+                background-color: rgba($color: #000000, $alpha: 0)
+            }
+
+            div.social {
+                @include flex(row, start, center);
+
+                h1 {
+                    text-transform: uppercase;
+                    color: $color-social-title;
+                    font-size: 1rem;
+                    margin-right: 1rem;
+                }
+
+                img {
+                    width: 25px;
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+    }
+
+}
