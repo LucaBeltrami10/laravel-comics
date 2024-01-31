@@ -1,0 +1,87 @@
+@import "./mixins";
+@import "./variables";
+
+
+main {
+    background-color: $main-background;
+
+    div.jumbotron {
+        height: 280px;
+        width: 100%;
+        background-image: url('../../img/jumbotron.jpg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    div.container {
+        position: relative;
+
+        div.stiker {
+            @include flex(row, center, center);
+            background-color: $stiker-and-button-main;
+            width: 160px;
+            padding: 0.5rem 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: translate(0px, -50%);
+
+
+            p {
+                color: white;
+                text-transform: uppercase;
+                font-weight: 800;
+            }
+        }
+
+        div.card-container {
+            width: 100%;
+            @include flex(row, space-between, start);
+            flex-wrap: wrap;
+            padding-bottom: 40px;
+
+            div.card {
+                height: 140px;
+                width: calc((100% / 6) - 16px);
+                background-color: magenta;
+                margin: 35px 8px 0 8px
+            }
+
+        }
+
+        button {
+            background-color: $stiker-and-button-main;
+            border: none;
+            text-transform: uppercase;
+            color: white;
+            padding: 0.5rem 1.5rem;
+            margin-left: 50%;
+            margin-bottom: 10px;
+            transform: translate(-50%, 0px);
+            font-size: 0.6rem;
+            font-weight: 800;
+        }
+    }
+
+    article.my__card {
+        width: calc((100% / 6) - 16px);
+        margin: 35px 8px 0 8px;
+
+        div {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        p {
+            padding: 10px 0;
+            font-size: 0.6rem;
+            color: white;
+            text-transform: uppercase;
+        }
+    }
+}
