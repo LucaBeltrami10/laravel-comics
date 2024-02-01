@@ -21,3 +21,12 @@ Route::get('/', function () {
         ['comics' => $comics]
     );
 });
+
+Route::get('/movie', function () {
+    $comics = config('comics');
+
+    return view(
+        'pages.movie',
+        ['comics' => $comics]
+    );
+});

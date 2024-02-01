@@ -6,8 +6,8 @@
         <nav>
             <ul>
                 <li><a href="#">characters</a></li>
-                <li><a href="#">comics</a></li>
-                <li><a href="#">movies</a></li>
+                <li><a href="http://127.0.0.1:8000/">comics</a></li>
+                <li><a href="http://127.0.0.1:8000/movie">movies</a></li>
                 <li><a href="#">tv</a></li>
                 <li><a href="#">games</a></li>
                 <li><a href="#">collectibiles</a></li>
