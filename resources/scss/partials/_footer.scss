@@ -3,11 +3,11 @@
 
 footer {
     div.upper-footer {
-        background-image: url('../../img/footer-bg.jpg');
+        background-image: url('../img/footer-bg.jpg');
 
         div.container.top {
             @include flex(row, start, start);
-            background-image: url('../../img/dc-logo-bg.png');
+            background-image: url('../img/dc-logo-bg.png');
             background-size: 22rem;
             background-position: right;
             background-repeat: no-repeat;
