@@ -4,7 +4,7 @@
             <div class="column">
                 <article>
                     <h1>dc comics</h1>
-                    <ul>
+                    <ul class="ps-0">
                         <li>Characters</li>
                         <li>Comics</li>
                         <li>Movies</li>
@@ -16,7 +16,7 @@
                 </article>
                 <article>
                     <h1>shop</h1>
-                    <ul>
+                    <ul class="ps-0">
                         <li>Shop DC</li>
                         <li>Shop DC Collectibles</li>
                     </ul>
@@ -24,7 +24,7 @@
             </div>
             <article class="column">
                 <h1>dc</h1>
-                <ul>
+                <ul class="ps-0">
                     <li>Term Of Use</li>
                     <li>Privacy e policy (New)</li>
                     <li>Ad Choices</li>
@@ -40,7 +40,7 @@
             </article>
             <article class="column">
                 <h1>sites</h1>
-                <ul>
+                <ul class="ps-0">
                     <li>DC</li>
                     <li>MAD Magazine</li>
                     <li>DC kids</li>
